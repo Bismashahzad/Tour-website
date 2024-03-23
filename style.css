@@ -1,0 +1,455 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+:root{
+    --text-color:#fff;
+    --bg-color:#000;
+    --main-color:#ffa343;
+    --h1-font:6rem;
+    --h2-font:3rem;
+    --p-font:1rem;
+}
+body{
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 25px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s  ease;
+}
+
+.logo{
+    height: 6rem;
+    width: 6rem;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    align-content: center;
+    font-weight: 500;
+    padding: 15px 22px;
+    transition: all .50s  ease;
+}
+
+.navbar a:hover{
+    color: #ffa343;
+    font-size: 19px ;
+    filter: brightness(1px 1px 9px var(--main-color));
+}
+.h-right{
+    display: flex;
+    align-items: center;
+    
+}
+.h-right a:first-child{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    margin-right: 20px;
+}
+
+.h-right a{
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-left: 3px;
+    margin-right: 18px;
+    transition: all .50s  ease;
+}
+.h-right a:hover{
+    color: #ffa343;
+    transform: translateY(-3px);
+}
+#menu-icon{
+    color: var(--text-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+#menu-icon:hover{
+    color: #ffa343;
+    transform: translateY(-3px);
+
+}
+section{
+    padding: 70px 8% 60px;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),linear-gradient(to left, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("https://admin.lbnhotels.com/storage/upload/packages/pakistan-northern-areas-tour_1696230189.png");
+    background-size: cover;
+   background-position: bottom center;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+.home-text h5{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #ffa343;
+}
+.home-text h1{
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color:var(--text-color);
+}
+.home-text p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 35px;
+    color:var(--text-color);
+}
+.btn{
+  display: inline-block;
+  padding: 13px 40px;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  transition: all 0.50s ease;
+  cursor: pointer;
+}
+.btn:hover{
+    transform: translateX(10px);
+    border: 2px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+}
+header.sticky{
+    height: 6rem;
+    padding: 3px 8%;
+    background: transparent;
+    backdrop-filter: blur(35px);
+}
+
+.feature h1{
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: var(--main-color);
+}
+.feature p{
+    padding-bottom: 40px;
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: center;
+}
+.holiday{
+    margin: 90px;
+    margin-top: 2px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.feature-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+.row-img{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.row-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+.row-img img:hover{
+    transform: scale(1.2);
+}
+
+.feature-content h4{
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.50s ease;
+}
+.feature-content h4:hover{
+   color: var(--main-color);
+}
+
+
+.holiday-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 9px rgba(255, 255, 255, 0.588));
+}
+.holiday-text h5{
+    color: var(--main-color);
+    font-size: 35px;
+    font-family: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+.holiday-text p{
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+.holiday-text ul li{
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Open Sans", sans-serif;
+}
+.holiday-text .btn{
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 3px;
+}
+.center-text{
+    text-align: center;
+
+}
+.center-text h2{
+   font-size: 40px;
+   font-weight: 800 ;
+    
+}
+.tour-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.box{
+    position: relative;
+}
+.box img{
+    width: 22rem;
+    height: 25rem;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: brightness(60%);
+    transition: all 0.3s cubic-bezier(.499,0.05,.55,.95);
+    will-change: filter;
+    display: block;
+}
+.box h6{
+    position: absolute;
+    left: 25px;
+    bottom: 95px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.box h4{
+    position: absolute;
+    left: 25px;
+    bottom: 67px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.box img:hover{
+    filter: brightness(90% ) hue-rotate(20deg);
+    transform: scale(1.09);
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 7px var(--main-color));
+}
+.center-btn{
+    text-align: center;
+    margin-top: 3rem;
+}
+.culture{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 90px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 6rem;
+    align-items: center;
+    
+}
+
+.culture-text h5{
+    color: var(--main-color);
+    font-size: 40px;
+    font-family: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+.culture-text h2{
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: 400;
+    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+.culture-text p{
+     font-size: 14px;
+    color: var(--text-color);
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+.culture-text .btn{
+    text-align: center;
+}
+.culture-img img{
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 9px rgba(255, 255, 255, 0.588));
+}
+.newsletter-content{
+    margin-left: 80px;
+    margin-right: 80px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 3rem;
+}
+.newsletter-text h2{
+    color: var(--text-color);
+    font-size: 40px;
+    font-family: 500;
+    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+.newsletter-text p{
+    color: var(--text-color);
+    font-size: 15px;
+    font-family: 200;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+.newsletter-content form{
+    display: grid;
+    grid-template-rows: 1fr 0.4fr;
+    gap: 1rem;
+}
+
+form input{
+    align-content: center;
+    padding: 12px;
+    border-radius: 2px;
+    background-color: #2d2d2d;
+    color: var(--text-color);
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(200px,auto));
+   background-color: #000000;
+   justify-content: center;
+   gap: 4rem;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.footer-box h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.footer-box a{
+    color: #626262;
+    margin-bottom: 2px;
+    transition: all 0.50s ease;
+}
+.footer-box a:hover{
+    color:var(--text-color);
+    transform: translateX(2px);
+}
+.footer-box .icon a{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 50px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.footer-box .icon a:hover{
+    font-size: 25px;
+    color:var(--text-color);
+    transform: translatey(2px);
+    filter: drop-shadow(1px 1px 9px var(--main-color));
+}
+.copyright p{
+    text-align: center;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    /* Header */
+    header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        padding: 10px 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
